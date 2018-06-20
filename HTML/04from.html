@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form的使用</title>
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    <!--普通文本输入框-->
+                      用户名:<input type="text" name =""><br>
+    &nbsp;&nbsp;&nbsp;密码:<input type="password" name="password" placeholder="请输入由大小写字母和数字组成的六位密码"><br>
+    &nbsp;&nbsp;&nbsp;性别:<input type="radio" name="sex" value="1">男
+                          <input type="radio" name="sex" value="0">女 <br>
+    &nbsp;&nbsp;&nbsp;爱好:<input type="checkbox" name="love[]" value="b"> 篮球
+        <input type="checkbox" name="love[]" value="f"> 足球
+        <input type="checkbox" name="love[]" value="t"> 兵乓球<br>
+    &nbsp;&nbsp;      学历:  &nbsp;&nbsp;&nbsp;<select name="education">
+                                <option value="0">小学</option>
+                                <option value="1">初中</option>
+                                <option value="2">高中</option>
+                                <option value="3">大学</option>
+
+    请选择上传文件: <br><input type="file" name="file"><br>
+    请输入个人说明: <br>
+    &nbsp;&nbsp;&nbsp;<textarea name="text" id=""></textarea>><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" name="buttons" value="确定">
+    <button disabled>再看看</button><br>
+    <input type="reset">
+    <input type="hidden" name="id" value="0">
+</form>
+</body>
+</html>
