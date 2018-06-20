@@ -108,17 +108,93 @@ HTML标签通常被叫做 : HTML标签(HTML tag)
 - \<div></div>
     - 一般用来划分一块区域,配合css来使用.
     - 文档布局,取代使用表格布局的老式方法.
+# HTML常用的行级元素
+行级元素不独占一行
+
+## 有语义的行级元素
+### HTML链接标签 
+- HTML链接 a标签
 
 
+    <a href="链接,要跳转的网址">网站描述</a>
+    
+- 跳转到本地的文件
+   - 在实际开发当中建议使用相对路径, ./ 为当前目录  ../上目录
+   
+   
+    <a href="./02.html">上节课的内容</a>
+- 标签属性:
+   - href属性:后跟要跳转的链接
+   - target :_blank 属性: 在新窗口打开要跳转的页面 
+   - html锚点: <a href="https://www.cnblogs.com/mfmdaoyou/p/7105358.html">锚点的一些说明</a>
+
+### HTML图像标签
+- HTML格式
+
+    
+    <img src="http://imgsrc.baidu.com/forum/w%3D580/sign=1540629246c2d562f208d0e5d71
+    090f3/6e52224e251f95ca7db05e44c0177f3e66095250.jpg" 
+    width="500px"  alt="这是图片标签" title="这是我老婆">
+- HTML属性
+   - src: 图片的地址(网络资源或者本地资源)\
+   - alt: 用于图片加载失败后的替代文字
+   - title: 当鼠标放在图片上时显示的文字
+   - width: 设置图片的宽度
+   - height:  设置图片的高度
+   - 注意: 我们一般只对高度或宽度设置,如果全部设置的话,会导致图片拉长
+   
+### HTML文档标签
+- 文本标签
+   - 加粗
+    
+    
+    <b>我也不知道写什么,但我想让这句话加粗</b><br>
+    <strong>这句话也是加粗,但有强调意义</strong><br>
+   - 斜体
 
 
+    <i>我也不知道写什么,但我想让这句话斜体</i><br>
+    <em>这句话也是斜体,但是它也有强调意义</em><br>
+## 无语义的行级标签
+- \<span>\</span>
+    - 一般是配合css来使用,用来设置一些文本格式
 
 
+     <span style="color: deepskyblue">  我想让这句话变为蓝色</span>
 
+## HTML的当中的实体字符
+- &gt; : 大于号
+- &lt: 小于号
+- 还有很多 <a href="http://www.w3school.com.cn/html/html_entities.asp">全部的实体字符</a>
 
+## 表单列表
+表单是一个包含表单元素的区域,通过from来定义表单区域
+>通过type属性定义不同类型的表单控件
 
-
-
+- 表单控件
+   - 必须要有name属性
+   - type: 指定我们的表单类型(普通文本,密码框,单选框, 多选框)
+   - radio: 表示的是单选框,name的值必须相同,必须有name和value
+   - checkbox: 表示的是多选框,必须有name和value且name的值必须相同
+   - select: 下拉选项框,必须有那么和valu,必须配合option使用
+   - file: 一般用于文件上传
+   - textarea; 用于输入说明
+   - submit: 按钮,用于提交等
+   - \<input type="reset">: 重置
+   - hidden: 隐藏域,不需要用户去填写或查看
+- 表单的属性
+   - action :提交地址
+   - method: 提交方式 get post
+   - entype: 指定属性值为 multipart/form-data 用于进行文件转码
+   - name: 表单名项,用于储存内容值
+   - value: 输入的值
+   - disabled: 禁用
+   - readonly: 只读
+   - placeholder: 提示
+- 表单提交默认是以get形式进行数据的提交
+- get: 通过URL地址传输数据,数据会显示在URL地址栏当中,所以传输数据大小有限制根据浏览器的不同
+数据大小不同,相对来说不安全
+- post: 没有大小限制,比较安全
 
 
 
