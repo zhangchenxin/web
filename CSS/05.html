@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF*">
+    <title>伪类选择器</title>
+    <style>
+    /* hover 设置鼠标悬停在元素上的状态 */
+    .box1{
+        width: 500px;
+        height: 500px;
+        background-color: blueviolet;
+    }
+    .box1:hover{
+        background-color:cadetblue
+    }
+
+    /* after 在元素的尾部插入内容 */
+    .box1:before{
+        content: 'fuck '
+    }
+    .box1:after{
+        content: ' world'
+    }
+    </style>
+</head>
+<body>
+    <div class="box1">this</div>
+</body>
+</html>

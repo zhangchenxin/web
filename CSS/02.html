@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器的使用</title>
+    <style>/*标签选择器,影响范围最大*/
+    /* div{
+        height: 100px;
+        width: 100px;
+        background-color: indigo;
+    } */
+    /*类选择器,影响范围可控制，相对较小*/
+    .item1{
+        height: 200px;
+        width: 200px;
+        background-color: antiquewhite;
+    }
+    .item2{
+        height: 100px;
+        width: 100px;
+        border:4px solid ;
+    }
+    .bg{
+        background-color: pink;
+    }
+    /* #id选择器 通过id属性的值来来设置元素的样式.id是有唯一性的.影响范围最小*/
+    #box1{
+        height: 500px;
+        width: 300px;
+        background-color: black;
+        border: 1px solid red;
+    }
+    </style>
+</head>
+<body>
+<div class="item1"></div>
+<div class="item2 bg"></div>
+<div id="box1"></div>
+</body>
+</html>
